@@ -19,11 +19,11 @@ namespace FactoryPattern
         }
     }
 
-    public class Apple : Sell
+    public class Phone : Sell
     {
         public override void Product()
         {
-            Console.WriteLine("Apple sold.");
+            Console.WriteLine("Phone sold.");
         }
     }
 }

@@ -6,7 +6,13 @@ namespace FactoryPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Creater creater = new Creater();
+            Sell productComputer = creater.FactoryMethod(Creater.Sales.Computer);
+            Sell productPhone = creater.FactoryMethod(Creater.Sales.Phone);
+           
+            productComputer.Product();
+            productPhone.Product();
+
         }
     }
 }
