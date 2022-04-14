@@ -6,9 +6,9 @@ namespace FactoryPattern
     {
         static void Main(string[] args)
         {
-            Creater creater = new Creater();
-            Sell productComputer = creater.FactoryMethod(Creater.Sales.Computer);
-            Sell productPhone = creater.FactoryMethod(Creater.Sales.Phone);
+            Creator creator = new Creator();
+            Sell productComputer = creator.FactoryMethod(Creator.Sales.Computer);
+            Sell productPhone = creator.FactoryMethod(Creator.Sales.Phone);
            
             productComputer.Product();
             productPhone.Product();

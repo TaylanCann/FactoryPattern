@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryPattern
 {
-     class Creater
+     class Creator
     {
         public Sell FactoryMethod(Sales salesType)
         {
